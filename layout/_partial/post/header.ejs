@@ -8,10 +8,11 @@
        <% if(theme.author.google_plus){ %>
 		<a href="https://plus.google.com/<%=theme.author.google_plus %>?rel=author" title="<%= config.author %>" target="_blank" itemprop="author"><%= config.author %></a>
 		<% }else{ %>
-		<a href="<%= config.url %>/about" title="<%= config.author %>" target="_blank" itemprop="author"><%= config.author %></a>
+		<a href="<%= config.url %>/academic" title="<%= config.author %>" target="_blank" itemprop="author"><%= config.author %></a>
 		<% } %>
   <p class="article-time">
     <time datetime="<%= date_xml(item.date) %>" itemprop="datePublished"> <%= __('datepublished') %> <%= item.date.format(config.date_format) %></time>
-    
+	 <% if (item.updated!=null) { %><%= __('updated') %>:<time datetime="<%= date_xml(item.updated) %>" itemprop="dateModified"><%= item.updated.format(config.date_format) %></time>
+    <% } %>
   </p>
 </header>

@@ -1,8 +1,8 @@
 ##### Menu
 menu:
-  首页: /
-  归档: /archives
-  关于: /about
+  Home: /
+  Academic: /academic
+  Archieves: /archives
 ## you can create `tags` and `categories` folders in `../source`.
 ## And create a `index.md` file in each of them.
 ## set `front-matter`as
@@ -25,9 +25,9 @@ rss: /atom.xml ## RSS address.
 #### Image
 imglogo:
   enable: true             ## display image logo true/false.
-  src: img/logo.png        ## `.svg` and `.png` are recommended,please put image into the theme folder `/jacman/source/img`.
+  src: img/logo.svg        ## `.svg` and `.png` are recommended,please put image into the theme folder `/jacman/source/img`.
 favicon: img/favicon.ico   ## size:32px*32px,`.ico` is recommended,please put image into the theme folder `/jacman/source/img`.     
-apple_icon: img/jacman.jpg  ## size:114px*114px,please put image into the theme folder `/jacman/source/img`.
+apple_icon: img/pacman.jpg  ## size:114px*114px,please put image into the theme folder `/jacman/source/img`.
 
 #### Author Avatar Picture
 author_img_enable: true ## display author avatar picture
@@ -40,7 +40,8 @@ author_img: img/author.jpg ## size:220px*220px.
 ## if the picture's format is `.png` or `.jpg`  instead of dataURI,you should set the `dataURI` value to false.
 
 #### Font
-ShowCustomFont: true  
+#ShowCustomFont: true
+ShowCustomFont: false  
 ## you can change custom font in `variable.styl` and `font.styl` which in the theme folder `/jacman/source/css`.
 
 #### Toc
@@ -62,15 +63,15 @@ totop: true   ##show scroll-to-top in article
 
 #### Author information
 author:
-  intro_line1:  ""  ## eg: "Hello ,I'm Larry Page in Google."
-  intro_line2:  ""  ## eg: "This is my blog,believe it or not."
+  intro_line1:  "某知名博主说建博客分三个阶段。"  ## eg: "Hello ,I'm Larry Page in Google."
+  intro_line2:  "我想，不如我就从第三阶段开始吧。"  ## eg: "This is my blog,believe it or not."
   weibo:      ## e.g. wuchong1014 or 2176287895 for http://weibo.com/2176287895
-  twitter:    ## e.g. wuchong for https://twitter.com/wuchong
+  twitter: hongweiqin   ## e.g. wuchong for https://twitter.com/wuchong
   github:     ## e.g. wuchong for https://github.com/wuchong
-  facebook:   ## e.g. wuchong for https://facebook.com/wuchong
+  facebook: qinhongwei  ## e.g. wuchong for https://facebook.com/wuchong
   douban:     ## e.g. wuchong1014 or your id for https://www.douban.com/people/wuchong1014
   tsina:      ## e.g. 2176287895  Your weibo ID,It will be used in share button.
-  email:      ## e.g. wuchong1014@gmail.com
+  email: qhw12@mails.tsinghua.edu.cn     ## e.g. wuchong1014@gmail.com
   google_plus:    ## eg:111190881341800841449 for https://plus.google.com/u/0/111190881341800841449
   stackoverflow:  ##3222790   ##e.g. 3222790 for http://stackoverflow.com/users/3222790/jark
 ## if you set them, the corresponding  share button will show on the footer
@@ -82,8 +83,8 @@ duoshuo:
   short_name:    ##e.g. wuchong   for duoshuo short name.
 
 disqus:
-  enable: false  ## disqus.com
-  short_name:    ##e.g. wuchong   for disqus short name.  
+  enable: true  ## disqus.com
+  short_name: qinhongwei   ##e.g. wuchong   for disqus short name.  
 
 #### Share button
 jiathis:
