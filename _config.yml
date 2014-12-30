@@ -2,7 +2,10 @@
 menu:
   Home: /
   Academic: /academic
-  Archieves: /archives
+  Archives: /archives
+  Messages: /messages
+  Websites: /websites
+  今天吃什么？: /今天吃什么？
 ## you can create `tags` and `categories` folders in `../source`.
 ## And create a `index.md` file in each of them.
 ## set `front-matter`as
@@ -14,8 +17,12 @@ menu:
 widgets: 
 - category
 - tag
+- tagcloud
 - links
 - rss
+#- feedjit
+#- weight
+#- douban
 ## provide seven widgets:category,tag,rss,archive,tagcloud,links,weibo
 ## modify links in `/layout/_widget/links.ejs`.
 
@@ -40,8 +47,8 @@ author_img: img/author.jpg ## size:220px*220px.
 ## if the picture's format is `.png` or `.jpg`  instead of dataURI,you should set the `dataURI` value to false.
 
 #### Font
-#ShowCustomFont: true
-ShowCustomFont: false  
+ShowCustomFont: true
+#ShowCustomFont: false  
 ## you can change custom font in `variable.styl` and `font.styl` which in the theme folder `/jacman/source/css`.
 
 #### Toc
@@ -63,8 +70,8 @@ totop: true   ##show scroll-to-top in article
 
 #### Author information
 author:
-  intro_line1:  "某知名博主说建博客分三个阶段。"  ## eg: "Hello ,I'm Larry Page in Google."
-  intro_line2:  "我想，不如我就从第三阶段开始吧。"  ## eg: "This is my blog,believe it or not."
+  intro_line1:  "PhD Candidate, Tsinghua Unviersity, focusing on Computer Vision"  ## eg: "Hello ,I'm Larry Page in Google."
+  intro_line2:  "I Believe It is Artifical Intelligence that will ultimately Make Human Equal, instead of God and Law."  ## eg: "This is my blog,believe it or not."
   weibo:      ## e.g. wuchong1014 or 2176287895 for http://weibo.com/2176287895
   twitter: hongweiqin   ## e.g. wuchong for https://twitter.com/wuchong
   github:     ## e.g. wuchong for https://github.com/wuchong
@@ -94,8 +101,8 @@ jiathis:
 
 #### Custom Search
 google_cse: 
-  enable: false
-  cx:   ## e.g. 018294693190868310296:abnhpuysycw your Custom Search ID.
+  enable: true
+  cx: 016892750164655569936:qtnoluqu-gg  ## e.g. 018294693190868310296:abnhpuysycw your Custom Search ID.
 ## https://www.google.com/cse/ 
 ## To enable the custom search You must create a "search" folder in '/source' and a "index.md" file
 ## set the 'front-matter' as
