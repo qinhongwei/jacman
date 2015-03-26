@@ -68,13 +68,16 @@ fancybox: true
 totop: true   ##show scroll-to-top in article
 ##if you want to scroll to top in every post set the value to true
 
+### Math
+mathjax: true ##show math
+
 #### Author information
 author:
   intro_line1:  "PhD Candidate, Tsinghua Unviersity, focusing on Computer Vision"  ## eg: "Hello ,I'm Larry Page in Google."
   intro_line2:  "I Believe It is Artifical Intelligence that will ultimately Make Human Equal, instead of God and Law."  ## eg: "This is my blog,believe it or not."
   weibo:      ## e.g. wuchong1014 or 2176287895 for http://weibo.com/2176287895
   twitter: hongweiqin   ## e.g. wuchong for https://twitter.com/wuchong
-  github:     ## e.g. wuchong for https://github.com/wuchong
+  github: qinhongwei    ## e.g. wuchong for https://github.com/wuchong
   facebook: qinhongwei  ## e.g. wuchong for https://facebook.com/wuchong
   douban:     ## e.g. wuchong1014 or your id for https://www.douban.com/people/wuchong1014
   tsina:      ## e.g. 2176287895  Your weibo ID,It will be used in share button.
@@ -113,9 +116,9 @@ google_cse:
   
 #### Analytics
 google_analytics:
-  enable: false
-  id:        ## e.g. UA-46321946-2 your google analytics ID.
-  site:      ## e.g. wuchong.me your google analytics site or set the value as auto.
+  enable: true 
+  id: UA-61221009-1       ## e.g. UA-46321946-2 your google analytics ID.
+  site: auto     ## e.g. wuchong.me your google analytics site or set the value as auto.
 ## You MUST upgrade to Universal Analytics first!
 ## https://developers.google.com/analytics/devguides/collection/upgrade/?hl=zh_CN
 
